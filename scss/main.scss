@@ -1,0 +1,71 @@
+$animate: top 0.3s, right 0.3s, bottom 0.3s, left 0.3s, width 0.3s, height 0.3s;
+
+body {
+  background-color: #425cf4;
+}
+
+h1 {
+  font-size: 5rem;
+  color: white;
+  font-family: 'Dosis', sans-serif;
+}
+
+h2 {
+  color: white;
+  font-family: 'Leckerli One', cursive;
+}
+
+.page-title {
+  margin-bottom: -30px;
+}
+
+.container {
+  margin: 150px;
+  text-align: center;
+  animation: lowerfade 1 2s ease-out;
+}
+
+.row {
+  display: inline-flex;
+}
+
+@keyframes lowerfade {
+  from{transform: translateY(-200px); opacity: 0;}
+  to{transfrom: translateY(0px); opacity: 1;}
+}
+
+@keyframes breathe {
+  0%{transform: translateY(0px);}
+  50%{transform: translateY(-10px);}
+  100%{transform: translateY(0px);}
+}
+
+.card {
+  display: inline-block;
+  margin: 20px;
+  width: 150px;
+  height: 200px;
+  border: 10px solid white;
+  border-radius: 10px;
+  color: white;
+  transition: $animate;
+  animation: breathe infinite 2s 2s ease-in;
+  text-decoration: none;
+
+}
+
+.card:hover {
+  color: #425cf4;
+  top: -10px;
+  background-color: white;
+  cursor: pointer;
+  width: 200px;
+  height: 250px;
+  transition: $animate;
+  animation: breathe infinite 0s;
+}
+
+.card-title {
+  font-family: 'Fredoka One', cursive;
+  margin-top: 60px;
+}

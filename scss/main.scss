@@ -1,7 +1,7 @@
 $animate: top 0.3s, right 0.3s, bottom 0.3s, left 0.3s, width 0.3s, height 0.3s;
 
 body {
-  background-color: #425cf4;
+  // background-color: #425cf4;
 }
 
 h1 {
@@ -20,7 +20,7 @@ h2 {
 }
 
 .container {
-  margin: 150px;
+  margin: 120px;
   text-align: center;
   animation: lowerfade 1 2s ease-out;
 }
@@ -55,7 +55,7 @@ h2 {
 }
 
 .card:hover {
-  color: #425cf4;
+  // color: #425cf4;
   top: -10px;
   background-color: white;
   cursor: pointer;
@@ -68,4 +68,19 @@ h2 {
 .card-title {
   font-family: 'Fredoka One', cursive;
   margin-top: 60px;
+}
+
+.color-wheel {
+  width: 50px;
+  height: 50px;
+  float: right;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  opacity: 0.5;
+}
+
+.color-wheel:hover{
+  opacity: 1;
+  cursor: pointer;
 }

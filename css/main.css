@@ -86,6 +86,10 @@ i:hover {
   animation: breathe infinite 2s 2.8s ease-in-out;
 }
 
+.column-6 {
+  animation: breathe infinite 2s 3s ease-in-out;
+}
+
 @keyframes lowerfade {
   from {
     transform: translateY(-200px);

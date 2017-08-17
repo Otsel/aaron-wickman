@@ -6,19 +6,24 @@ $(function(){
     }
 
   $('.color-wheel').on('click', function(){
-    color = getRandInt(0, colors.length);
+    color = getRandInt(0, (colors.length - 1));
+    previousColor = currentColor;
     currentColor = colors[color];
+    while (currentColor == previousColor){
+      color = getRandInt(0, colors.length);
+      currentColor = colors[color];
+      console.log("repeated color, regenerating...");
+    }
     console.log(currentColor);
 
     $('body').css('background-color', currentColor);
-
-    $(".card").mouseover(function() {
-      $(this).css('color', currentColor);
-    }).mouseout(function() {
-      $(this).css('color', "white");
-    });
-
+    
+    previousSubheader = subheader;
     subheader = getRandInt(0,2);
+    while (subheader == previousSubheader){
+      subheader = getRandInt(0,2);
+      console.log("repeated subheader, regenerating...")
+    }
     $(".sub-header").html(subheaders[subheader]);
   });
 
@@ -36,16 +41,21 @@ $(function(){
     "#AAAAAA",
   ];
 
-  color = getRandInt(0, colors.length);
+  color = getRandInt(0, (colors.length - 1));
   currentColor = colors[color];
   console.log(currentColor);
-
   $('body').css('background-color', currentColor);
   $('.card').hover(function(){
     $(this).css('color', currentColor);
   });
 
   $(".card").mouseover(function() {
+    $(this).css('color', currentColor);
+  }).mouseout(function() {
+    $(this).css('color', "white");
+  });
+
+  $("i").mouseover(function() {
     $(this).css('color', currentColor);
   }).mouseout(function() {
     $(this).css('color', "white");

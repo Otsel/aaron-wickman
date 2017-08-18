@@ -1,4 +1,5 @@
 $(function(){
+
   function getRandInt(min, max) {
       min = Math.ceil(min);
       max = Math.floor(max);
@@ -17,7 +18,8 @@ $(function(){
     console.log(currentColor);
 
     $('body').css('background-color', currentColor);
-    
+    $('.card-info').css('color', currentColor)
+
     previousSubheader = subheader;
     subheader = getRandInt(0,2);
     while (subheader == previousSubheader){
@@ -45,6 +47,7 @@ $(function(){
   currentColor = colors[color];
   console.log(currentColor);
   $('body').css('background-color', currentColor);
+  $('.card-info').css('color', currentColor)
   $('.card').hover(function(){
     $(this).css('color', currentColor);
   });

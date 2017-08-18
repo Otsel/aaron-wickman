@@ -1,7 +1,7 @@
 $animate: top 0.3s, right 0.3s, bottom 0.3s, left 0.3s, width 0.3s, height 0.3s;
 
 //Mobile Versioning
-@media handheld, screen and (min-width: 768px){
+@media handheld, screen and (max-width: 1000px){
 
   body {
     text-align: center;
@@ -16,7 +16,7 @@ $animate: top 0.3s, right 0.3s, bottom 0.3s, left 0.3s, width 0.3s, height 0.3s;
   }
 
   .page-title {
-    margin-bottom: -50px !important;
+    margin-bottom: -70px !important;
   }
 
   .card{
@@ -31,13 +31,18 @@ $animate: top 0.3s, right 0.3s, bottom 0.3s, left 0.3s, width 0.3s, height 0.3s;
     margin-top: 40% !important;
   }
 
+  .card-info {
+    font-size: 3rem !important;
+    color: white !important;
+  }
+
   .social {
-    font-size: 5rem !important;
+    font-size: 4rem !important;
     top: auto !important;
     left: auto !important;
     position: inherit !important;
     display: grid !important;
-    margin-bottom: -120px !important;
+    margin-bottom: -130px !important;
   }
 
   .color-wheel {
@@ -146,7 +151,7 @@ i {
 }
 
 .card {
-  display: inline-block;
+  display: block;
   margin: 20px;
   width: 150px;
   height: 200px;
@@ -155,6 +160,7 @@ i {
   color: white;
   transition: $animate;
   text-decoration: none;
+  text-align: center;
 }
 
 .card:hover {
@@ -171,6 +177,11 @@ i {
 .card-title {
   font-family: 'Fredoka One', cursive;
   margin-top: 60px;
+}
+
+.card-info {
+  font-family: 'Fredoka One', cursive;
+  font-style: italic;
 }
 
 .color-wheel {

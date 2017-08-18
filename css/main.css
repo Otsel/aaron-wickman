@@ -154,6 +154,15 @@ i:hover {
   }
 }
 
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .card {
   display: block;
   margin: 20px;
@@ -186,6 +195,7 @@ i:hover {
 .card-info {
   font-family: 'Fredoka One', cursive;
   font-style: italic;
+  font-size: .7rem;
 }
 
 .color-wheel {
@@ -196,10 +206,10 @@ i:hover {
   top: 10px;
   right: 10px;
   opacity: 0.5;
-  animation: fade-in 2s ease-out;
+  animation: fade-in-half 2s ease-out;
 }
 
-@keyframes fade-in {
+@keyframes fade-in-half {
   from {
     opacity: 0;
   }

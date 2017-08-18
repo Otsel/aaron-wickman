@@ -1,5 +1,53 @@
 $animate: top 0.3s, right 0.3s, bottom 0.3s, left 0.3s, width 0.3s, height 0.3s;
 
+//Mobile Versioning
+@media handheld, screen and (min-width: 768px){
+
+  body {
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 14rem !important;
+  }
+
+  h2 {
+    font-size: 7rem !important;
+  }
+
+  .page-title {
+    margin-bottom: -50px !important;
+  }
+
+  .card{
+    width: 80vw !important;
+    height: 70vh !important;
+    border: 20px white solid !important;
+    border-radius: 30px !important;
+  }
+
+  .card-title {
+    font-size: 6rem !important;
+    margin-top: 40% !important;
+  }
+
+  .social {
+    font-size: 5rem !important;
+    top: auto !important;
+    left: auto !important;
+    position: inherit !important;
+    display: grid !important;
+    margin-bottom: -120px !important;
+  }
+
+  .color-wheel {
+    width: 100px !important;
+    height: 100px !important;
+  }
+
+}
+//End Mobile
+
 body {
   background-color: #225680;
 }

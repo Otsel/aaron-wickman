@@ -1,3 +1,40 @@
+@media handheld, screen and (max-width: 1000px) {
+  body {
+    text-align: center;
+  }
+  h1 {
+    font-size: 14rem !important;
+  }
+  h2 {
+    font-size: 7rem !important;
+  }
+  .page-title {
+    margin-bottom: -50px !important;
+  }
+  .card {
+    width: 80vw !important;
+    height: 70vh !important;
+    border: 20px white solid !important;
+    border-radius: 30px !important;
+  }
+  .card-title {
+    font-size: 6rem !important;
+    margin-top: 40% !important;
+  }
+  .social {
+    font-size: 5rem !important;
+    top: auto !important;
+    left: auto !important;
+    position: inherit !important;
+    display: grid !important;
+    margin-bottom: -120px !important;
+  }
+  .color-wheel {
+    width: 100px !important;
+    height: 100px !important;
+  }
+}
+
 body {
   background-color: #225680;
 }

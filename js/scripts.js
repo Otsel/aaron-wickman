@@ -66,8 +66,13 @@ $(function(){
 
   var subheaders = [
     "Brilliant Web Development" ,
-    "Excellent UI/UX Design" ,
-    "Incredibly Responsive"
+    "Excellent UI Design" ,
+	"Turbo-Charged User Experience" ,
+    "Incredibly Responsive" ,
+	"Blockchain Ready" ,
+	"Personally, I prefer tangle" ,
+	"Github is my primary social media" ,
+	"'Extroardinary Development & Design' - Myself"
   ];
 
   var subheader = getRandInt(0,2);

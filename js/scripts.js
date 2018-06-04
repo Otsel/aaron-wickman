@@ -21,9 +21,9 @@ $(function(){
     $('.card-info').css('color', currentColor)
 
     previousSubheader = subheader;
-    subheader = getRandInt(0,2);
+    subheader = getRandInt(0,8);
     while (subheader == previousSubheader){
-      subheader = getRandInt(0,2);
+      subheader = getRandInt(0,8);
       console.log("repeated subheader, regenerating...")
     }
     $(".sub-header").html(subheaders[subheader]);
@@ -70,12 +70,13 @@ $(function(){
 	"Turbo-Charged User Experience" ,
     "Incredibly Responsive" ,
 	"Blockchain Ready" ,
-	"Personally, I prefer tangle" ,
+	"Personally, I prefer Tangle over Blockchain" ,
 	"Github is my primary social media" ,
-	"'Extroardinary Development & Design' - Myself"
+	"'Extroardinary Development & Design' - Myself'" ,
+	"This domain is SSL certified just to prove I'm capable"
   ];
 
-  var subheader = getRandInt(0,2);
+  var subheader = getRandInt(0,8);
 
   $(".sub-header").html(subheaders[subheader]);
 
